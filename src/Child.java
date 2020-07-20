@@ -1,12 +1,12 @@
 
 public class Child {
 
-    public void eat(Food food1) throws NotWantToEat {
+    public void eat(Food food1) throws NotWantToEatException {
         switch (food1) {
             case CARROT:
             case PORRIDGE:
                 tastyFood(food1);
-                throw new NotWantToEat(" Не буду кушать!");
+                throw new NotWantToEatException(" Не буду кушать!");
             case APPLE:
             case ICECREAM:
                 tastyFood(food1);
